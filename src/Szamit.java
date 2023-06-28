@@ -1,20 +1,16 @@
 public class Szamit {
 
 
-    public double duplaz(double szam) {
-        try {
-            if (szam < 0) {
-                throw new NegativSzamException();
-            } else {
-                return szam * 2;
-            }
-        } catch (NegativSzamException e) {
-            System.out.println(e.getMessage());
+    public static double duplaz(double szam) throws NegativSzamException {
+        if (szam < 0) {
+            throw new NegativSzamException();
+        } else {
+            return szam * 2;
         }
-
-        return szam;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Szamit{}";
+    }
 }

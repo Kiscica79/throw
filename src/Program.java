@@ -1,12 +1,7 @@
 public class Program {
 
-    public static String[] args() {
-        try {
-            throw new NegativeArraySizeException();
-        } catch (NegativeArraySizeException ex) {
-            System.out.println(ex.getMessage());
-        }
-        return args();
+    public static void main (String[] args[]) throws NegativSzamException {
+        System.out.println(Szamit.duplaz(-3.8));
     }
 
 
